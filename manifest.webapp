@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "ЮТК",
+  "launch_path": "/index.html",
+  "description": "South Transportation Company",
+  "icons": {
+    "128": "wp-content/themes/twentyseventeen-child/assets/images/logo3.png"
+  },
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "ua",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "ЮТК",
+      "description": "Южная транспортная компания"
+    }
+  }
+}
