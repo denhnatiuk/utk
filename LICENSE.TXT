@@ -1,6 +1,0 @@
-License
-
-Copyright (c) 2017 Denys Hnatiuk
-
-All rights reserved by Denys Hnatiuk.
-To use this template contact author via email denys.hnatiuk@gmail.com

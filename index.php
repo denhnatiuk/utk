@@ -1,26 +1,60 @@
 <?php
 /**
- * The main template file
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * @link https://utk.net.ua
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen_child
- * @since 1.0
- * @version 1.0
+ * @package utk
  */
-
-get_header();
-
-get_template_part( 'template-parts/about', get_post_format() );
-get_template_part( 'template-parts/services', get_post_format() );
-get_template_part( 'template-parts/team', get_post_format() );
-get_template_part( 'template-parts/clients', get_post_format() );
-
-get_footer();
 ?>
+
+		<?php
+		get_header();
+
+		// if ( have_posts() ) :
+		//
+		// 	if ( is_home() && ! is_front_page() ) :
+				?>
+
+        	<div id="primary" class="content-area">
+
+				<?php get_template_part( 'template-parts/index', 'aboutus' ); ?>
+				<?php get_template_part( 'template-parts/index', 'services' ); ?>
+				<?php get_template_part( 'template-parts/index', 'team' ); ?>
+        <?php get_template_part( 'template-parts/index', 'features' ); ?>
+          </div>
+				</main>
+				<?php
+			// endif;
+
+			/* Start the Loop */
+			//while ( have_posts() ) : the_post(); ?>
+
+				<?php
+				//wp_list_pages( 'sort_column=post_title&sort_order=DESC' )
+
+				?>
+				<?php
+
+				//echo '<div style="color:red;font-size:30px;font-weight:bold;">//DEBUG: posts loop statrted from index.php</div>';
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				// get_template_part( 'template-parts/content', get_post_type() );
+
+			//endwhile;
+
+
+
+		// else :
+		//
+		// 	get_template_part( 'template-parts/content', 'none' );
+		//
+		//
+		// endif;
+		?>
+
+<?php
+// get_sidebar();
+get_footer();
