@@ -1,6 +1,7 @@
 node_modules/
 lib/
-.git
+.git/
+.temp/
 .env
 
 # !lib/
