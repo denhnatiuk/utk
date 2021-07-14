@@ -1,0 +1,14 @@
+node_modules/
+lib/
+.git
+.env
+
+# !lib/
+# lib/*
+# !lib/bootstrap/
+# lib/bootstrap/*
+# !lib/jquery/
+# lib/jquery/*
+# !lib/slick/
+# lib/slick/*
+# !lib/fontAwesomeCss.css
